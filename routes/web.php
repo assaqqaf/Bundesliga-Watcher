@@ -14,3 +14,4 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('/matches', 'MatchController@index');
+Route::get('/teams', 'TeamController@index');

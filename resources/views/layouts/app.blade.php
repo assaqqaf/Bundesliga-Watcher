@@ -27,8 +27,9 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="{{ url('/teams') }}">Teams</a></li>
+                <li><a href="{{ url('/matches') }}">Matches</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
