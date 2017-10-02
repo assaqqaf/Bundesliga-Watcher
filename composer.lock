@@ -4,51 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4dacc3766225f9eeb0e2a425349be54b",
-    "content-hash": "91c6b5803fc1cd6c04f59223714215c7",
+    "hash": "b0970c5d71311db5406069eaa1c4d229",
+    "content-hash": "e549007e62d7cb665bdee782f7dd06cc",
     "packages": [
-        {
-            "name": "andinger/openligadb-api",
-            "version": "1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/andinger/OpenLigaDbApi.git",
-                "reference": "aa24eb9d76cdb23f5263de004ac0147c53959d8b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/andinger/OpenLigaDbApi/zipball/aa24eb9d76cdb23f5263de004ac0147c53959d8b",
-                "reference": "aa24eb9d76cdb23f5263de004ac0147c53959d8b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-soap": "*",
-                "php": ">=5.5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Andinger\\OpenLigaDbApi\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andreas Kessler",
-                    "email": "info@andikessler.de"
-                }
-            ],
-            "description": "PHP API to OpenLigaDB",
-            "keywords": [
-                "api",
-                "openligadb",
-                "sport"
-            ],
-            "time": "2016-04-05 07:48:52"
-        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
