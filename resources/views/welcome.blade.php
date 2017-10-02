@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-5">
             <h2>Upcoming Matches</h2>
-            @foreach ($nextMatch as $match)
+            @forelse ($nextMatch as $match)
                 <div class="list-group">
                   <div class="list-group-item">
                     <div class="row">
@@ -26,7 +26,11 @@
                     </p>
                   </div>
                 </div>
-            @endforeach
+            @empty
+                <div class="alert alert-info">
+                    No upcoming matches
+                </div>
+            @endforelse
         </div>
 
         <div class="col-md-5 col-md-offset-2">
