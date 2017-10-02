@@ -27,9 +27,9 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                <li><a href="{{ url('/teams') }}">Teams</a></li>
-                <li><a href="{{ url('/matches') }}">Matches</a></li>
+                <li {{{ (Request::is('/') ? 'class=active' : '') }}}><a href="{{ url('/') }}">Home</a></li>
+                <li {{{ (Request::is('teams') ? 'class=active' : '') }}}><a href="{{ url('/teams') }}">Teams</a></li>
+                <li {{{ (Request::is('matches') ? 'class=active' : '') }}}><a href="{{ url('/matches') }}">Matches</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -42,8 +42,5 @@
         <footer>
             Copyright &copy; <time datetime="{{date('Y')}}">{{date('Y')}}</time>
         </footer>
-
-        <script src="{{ asset('/assets/js/app.js') }}"></script>
-        @yield('js')
     </body>
 </html>
